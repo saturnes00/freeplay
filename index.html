@@ -2,12 +2,85 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>TEMPLATE</title>
+    <title>FreePlay</title>
+    <!-- Police en ligne Google Fonts pour les titres -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Lien vers la feuille de style -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan mi at turpis aliquet sodales at in magna. Aliquam faucibus ultrices ligula, non gravida sem ullamcorper at. Ut cursus fringilla erat, a dapibus dolor tempor vel. <a href="https://rrvm.ymag.cloud/index.php/apprenant/planning/courant/?semaineDebut=202641&ressources=W3siY29kZSI6ODU3MywidHlwZSI6NzUwMH1d&modeAffichage=0" >SEUL LINK PEUT VAINCRE GANON</a>In quam sapien, sodales sit amet elit in, tincidunt ullamcorper felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus imperdiet porta gravida. Aliquam congue et velit pellentesque scelerisque. Nam luctus ligula id elit porttitor, sed tempus urna cursus. Nam pretium eget neque lobortis pretium. In hac habitasse platea dictumst. Nulla scelerisque varius elit, id commodo tortor lobortis non. Nunc placerat eros a diam hendrerit, at ultricies turpis tempor. Vivamus ultrices ornare leo, at tincidunt velit congue eu.</p>
-      </div>
-    </div>
+
+    <!-- En-tête : logo + titre principal -->
+    <header>
+      <img src="img/logo/logo.png"
+           alt="Logo FreePlay"
+           title="FreePlay"
+           width="150">
+      <h1>FreePlay</h1>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="genres/horror.html">Horreur</a></li>
+        <li><a href="genres/puzzle.html">Puzzle</a></li>
+        <li><a href="genres/idle.html">Idle</a></li>
+        <li><a href="genres/coop.html">Coop</a></li>
+        <li><a href="genres/party.html">Party</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- Présentation du site -->
+      <section>
+        <h2>C'est quoi, FreePlay ?</h2>
+        <p>FreePlay, c'est ton catalogue de jeux gratuits jouables en ligne.<br>
+        Pas d'abonnement, pas de piège : on sélectionne des jeux accessibles depuis ton navigateur
+        et on les range par catégories pour te faire gagner du temps.</p>
+      </section>
+
+      <!-- Les catégories : une boîte par type de jeu -->
+      <section>
+        <h2>Les types de jeux</h2>
+        <div class="boites">
+          <div class="boite horreur">
+            <h3>👻 Horreur</h3>
+            <p>Pour ceux qui aiment avoir le cœur qui bat un peu trop vite.</p>
+          </div>
+          <div class="boite puzzle">
+            <h3>🧩 Puzzle</h3>
+            <p>Des énigmes et des casse-têtes pour faire chauffer tes neurones.</p>
+          </div>
+          <div class="boite idle">
+            <h3>⏳ Idle</h3>
+            <p>Des jeux qui avancent même quand tu ne joues pas.</p>
+          </div>
+          <div class="boite coop">
+            <h3>🤝 Coop</h3>
+            <p>Des jeux pour jouer à plusieurs avec tes amis.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Les objectifs du site -->
+      <section>
+        <h2>Nos objectifs</h2>
+        <ul>
+          <li><strong>Rendre le jeu accessible à tout le monde</strong> : uniquement des jeux gratuits.</li>
+          <li><strong>Faire gagner du temps</strong> : des catégories claires pour trouver vite.</li>
+          <li><strong>Proposer des jeux sûrs</strong> : pas de sites douteux ni d'arnaques.</li>
+          <li><strong>Mettre en lumière les petits créateurs</strong> : beaucoup de pépites sont faites par des indépendants.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>FreePlay — Projet réalisé dans le cadre d'un cours d'intégration web — © 2026</p>
+    </footer>
+
   </body>
 </html>
