@@ -107,3 +107,58 @@ footer {
   padding: 20px;
   border-top: 1px solid #1a1a2e;
 }
+
+/* ========================================================
+   À COLLER À LA FIN DE TON style.css
+   ======================================================== */
+
+/* Couleur de la catégorie Party (il manquait) */
+.party { border-top: 5px solid #ff7ce5; }
+
+/* ===== Les cartes de jeux ===== */
+
+/* Le conteneur : les cartes les unes sous les autres */
+.jeux {
+  display: flex;
+  flex-direction: column;      /* une carte par ligne */
+  gap: 20px;
+}
+
+/* Une carte : le résumé à gauche, les infos à droite */
+.jeu {
+  display: flex;               /* résumé et infos côte à côte */
+  background-color: #1a1a2e;
+  border-radius: 15px;
+}
+
+/* Partie gauche : titre + description */
+.resume {
+  flex: 2;                     /* prend 2 parts de la largeur */
+  padding: 15px;
+}
+
+/* Partie droite : le petit menu d'infos, caché au départ */
+.infos {
+  display: none;               /* invisible tant qu'on ne survole pas */
+  flex: 1;                     /* prend 1 part de la largeur */
+  background-color: #252542;   /* un peu plus clair que la carte */
+  border-radius: 0 15px 15px 0; /* arrondi seulement à droite */
+  padding: 15px;
+}
+
+/* LA règle magique : quand on survole la carte, ses infos apparaissent */
+.jeu:hover .infos {
+  display: block;
+}
+
+/* Petit bonus : la carte s'éclaircit au survol */
+.jeu:hover {
+  background-color: #20203a;
+}
+
+/* La liste d'infos sans puces */
+.infos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
